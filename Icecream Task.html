@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+
+<body class="bg-dark" style="background-image: url(./6069078.jpg);">
+   
+    <div class="container">
+        <div class="row">
+            <div class="offset-lg-4 col-lg-3  mt-4">
+                <div style="border-radius:10px; font-size: 17px; font-weight: 900;" class="mt-4 bg-light">
+               <br>
+                    <ul style="list-style-type:none;">
+                    
+                    <li> milo -- Rs:50</li>
+                    <li> chocolate -- Rs:30</li>
+                    <li>rainbox sherbet -- Rs:60 </li>
+                    <li> Stawberry -- Rs:30</li>
+                    <li> Stawberry&Vanilla -- Rs:55</li>
+                    <li> rainbox mix -- Rs:80</li>
+                    
+                </ul><br>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="mt-4 offset-lg-4 col-lg-4">
+
+                <input type="text" id="name"
+                    style="border-radius: 10px;box-shadow: 1px 1px 1px 1px; height: 40px; width: 260px;"
+                    placeholder="ice cream no eg'1'">
+                <input type="text" id="quantity" placeholder="quantity eg'2'"
+                    style="border-radius: 10px;box-shadow: 1px 1px 1px 1px;width: 260px; height: 40px;">
+
+                <br><button class="btn btn-primary fs-5 mt-4" 
+                    onclick="on_value(document.getElementById('name').value,document.getElementById('quantity').value )">
+                    Total</button>
+               
+                <p id="total" style="color: white;"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // var calc = document.getElementById("data");
+        // function but(num) {
+        //     calc.value += num;
+        // }
+
+        // var calc = document.getElementById('name');
+
+        // function but(num) {
+        //     calc.value += num;
+        // }
+        temp = 0;
+
+        function on_value(ice, n,temp) {
+            // console.log(m);
+            if (ice == "1") {
+                v(n);
+            }
+            else if (ice == "2") {
+                s(n);
+            }
+            else if (ice == "3") {
+                c(n);
+            }
+            else if (ice == "4") {
+                m(n);
+            } else if (ice == "5") {
+                rn(n);
+            } else if (ice == "6") {
+                rr(n);
+
+            }
+
+        }
+        function v(val) {
+            var b = 50;
+            total = b * val;
+
+            document.getElementById('total').innerHTML = "total amount is" + " " + total;
+        }
+        function s(val, temp) {
+            var b = 30;
+            total = b * val;
+
+            document.getElementById('total').innerHTML = "total amount is" + " " + total;
+        }
+        function c(val, temp) {
+            var b = 60;
+            total = b * val;
+            document.getElementById('total').innerHTML = "total amount is" + " " + total;
+        }
+        function m(val, temp) {
+            var b = 30;
+            total = b * val;
+            document.getElementById('total').innerHTML = "total amount is" + " " + total;
+        }
+        function rn(val, temp) {
+            var b = 55;
+            total = b * val;
+            document.getElementById('total').innerHTML = "total amount is" + " " + total;
+        }
+        function rr(val, temp) {
+            var b = 80;
+            total = b * val;
+            document.getElementById('total').innerHTML = "total amount is" + " " + total;
+            return total
+        }
+    
+
+
+
+    </script>
+    <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
